@@ -1,152 +1,105 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Siqi Chen",
+    "email": "chensq23@mails.tsinghua.edu.cn",
+    "phone": "+86 18811671195",
+    "website": "https://jamescsq47.github.io",
+    "summary": "Undergraduate at Tsinghua University, Electronic Engineering. Research interests include AI systems, efficient attention mechanisms, and brain foundation models.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
+      "city": "Beijing",
+      "countryCode": "CN",
       "region": ""
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "jamescsq47",
+        "url": "https://github.com/jamescsq47"
       }
     ]
   },
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
+      "institution": "Tsinghua University",
+      "area": "B.S. in Electronic Engineering",
+      "studyType": "Undergraduate",
+      "startDate": "2023-08",
+      "endDate": "Present",
+      "gpa": "3.94/4.0",
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "Tsinghua University High School",
+      "area": "High School",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "startDate": "2017-08",
+      "endDate": "2023-06",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
-  "languages": [],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "",
+      "keywords": ["C++", "C", "Python", "CUDA", "LaTeX"]
+    },
+    {
+      "name": "Software/Tools",
+      "level": "",
+      "keywords": ["MATLAB", "Typst"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "TOEFL 106 (R30 L29 S22 W25)"
+    }
+  ],
   "interests": [],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "BrainOmni: A Brain Foundation Model for Unified EEG and MEG Signals",
+      "publisher": "NeurIPS 2025",
+      "releaseDate": "2025-05",
+      "website": "https://arxiv.org/abs/2505.18185",
+      "summary": "Proposes the first brain foundation model that generalises across heterogeneous EEG and MEG recordings."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and Quantized Attention in Visual Generation Models",
+      "publisher": "NeurIPS 2025",
+      "releaseDate": "2025-05",
+      "website": "https://arxiv.org/abs/2506.16054",
+      "summary": "Designs a novel pattern-aware token reordering technique that unifies diverse attention patterns into hardware-friendly block-wise patterns."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "db-SP: Accelerating Sparse Attention for Visual Generative Models with Dual-Balanced Sequence Parallelism",
+      "publisher": "MLSys 2026",
+      "releaseDate": "2025-11",
+      "website": "https://arxiv.org/abs/2511.23113",
+      "summary": "Introduces a dual-balanced workload partitioning approach for sparse attention with sequence parallelism."
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
+  "presentations": [],
+  "teaching": [],
   "portfolio": [
     {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
+      "name": "An Intelligent Voice Assistant",
+      "category": "project",
+      "date": "2024-07",
       "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "description": "Arduino + PCB + Python voice assistant for email reminders, task scheduling, and study focus. Second Award of Hardware Design Competition."
+    },
+    {
+      "name": "FREE BBS – Tsinghua EE Student Self-Learning Platform",
+      "category": "project",
+      "date": "2025-12",
+      "url": "",
+      "description": "RAG + AI architecture using GLM models, vector databases, and hybrid retrieval for personalized learning."
     }
   ]
 }

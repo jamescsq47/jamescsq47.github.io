@@ -21,7 +21,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 # Site Author
 author:
   name: "Siqi Chen"
-  avatar: "/assets/images/bio-photo.jpg"   # 如果你有照片就传上去，没有就留空或删掉
+  avatar: "/images/bio-photo.jpg"   # 如果你有照片就传上去，没有就留空或删掉
   bio: "Undergraduate at Tsinghua University · Electronic Engineering"
   location: "Beijing, China"
   email: chensq23@mails.tsinghua.edu.cn

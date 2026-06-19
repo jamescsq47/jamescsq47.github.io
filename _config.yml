@@ -11,12 +11,13 @@ search: true
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
 plugins:
-  - jekyll-remote-theme
   - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jemoji
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /workspace/jamescsq47.github.io config --global --add safe.directory /workspace/jamescsq47.github.io)",
+      "Bash(git -C /workspace/jamescsq47.github.io log --oneline -5)",
+      "Bash(git *)"
+    ]
+  }
+}

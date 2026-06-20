@@ -7,7 +7,14 @@
       "Bash(gh api *)",
       "WebFetch(domain:jamescsq47.github.io)",
       "Bash(bundle install *)",
-      "WebFetch(domain:raw.githubusercontent.com)"
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Read(//tmp/**)",
+      "Bash(wget -q https://github.com/cli/cli/releases/download/v2.65.0/gh_2.65.0_linux_amd64.tar.gz -O gh.tar.gz)",
+      "Bash(tar -xzf gh.tar.gz)",
+      "Bash(cp gh_2.65.0_linux_amd64/bin/gh /workspace/jamescsq47.github.io/gh)",
+      "Bash(chmod +x /workspace/jamescsq47.github.io/gh)",
+      "Bash(/workspace/jamescsq47.github.io/gh --version)",
+      "Bash(/workspace/jamescsq47.github.io/gh auth *)"
     ]
   }
 }

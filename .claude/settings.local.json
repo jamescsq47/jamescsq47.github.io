@@ -14,7 +14,10 @@
       "Bash(cp gh_2.65.0_linux_amd64/bin/gh /workspace/jamescsq47.github.io/gh)",
       "Bash(chmod +x /workspace/jamescsq47.github.io/gh)",
       "Bash(/workspace/jamescsq47.github.io/gh --version)",
-      "Bash(/workspace/jamescsq47.github.io/gh auth *)"
+      "Bash(/workspace/jamescsq47.github.io/gh auth *)",
+      "Bash(./gh auth *)",
+      "Bash(chown -R 827600039:827600039 /workspace/jamescsq47.github.io/.git /workspace/jamescsq47.github.io/_config.yml /workspace/jamescsq47.github.io/_pages/ /workspace/jamescsq47.github.io/_data/ /workspace/jamescsq47.github.io/_publications/ /workspace/jamescsq47.github.io/_portfolio/ /workspace/jamescsq47.github.io/_talks/ /workspace/jamescsq47.github.io/_teaching/ /workspace/jamescsq47.github.io/_posts/)",
+      "Bash(chown -R 827600039:827600039 /workspace/jamescsq47.github.io/)"
     ]
   }
 }

@@ -3,6 +3,9 @@ layout: single
 title: "About Me"
 permalink: /
 author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
 ---
 
 Hi, I'm Siqi Chen — an undergraduate student in Electronic Engineering at Tsinghua University.  

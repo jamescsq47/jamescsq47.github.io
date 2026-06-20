@@ -1,25 +1,27 @@
 ---
-layout: single
+layout: archive
 title: "Activities"
 permalink: /activities/
 author_profile: true
 ---
 
+{% include base_path %}
+
 ## 🧩 Projects
 
-**FREE BBS — Tsinghua EE Student Self-Learning Platform** <span style="color:#888; font-size:0.85em;">· Dec 2025 – Present</span>
+**Intelligent Voice Assistant** — Jul 2024 – Sep 2024
 {: .notice--info}
 
-A RAG-powered learning platform tackling the loss of curriculum coherence in the AI era. Built with GLM models, vector databases, and hybrid retrieval, integrating personalized learning footprints and PBL projects.
+- Arduino + PCB + Python voice assistant for email reminders, task scheduling, and study focus
+- **Second Award of Hardware Design Competition**
 
 ---
 
-**Intelligent Voice Assistant** <span style="color:#888; font-size:0.85em;">· Jul 2024 – Sep 2024</span>
+**FREE BBS – Tsinghua EE Student Self-Learning Platform** — Dec 2025 – Present
 {: .notice--info}
 
-Arduino + PCB + Python voice assistant for email reminders, task scheduling, and study focus.
-
-🏆 **Second Award**, Hardware Design Competition
+- RAG + AI architecture using GLM models, vector databases, and hybrid retrieval
+- Integrates personalized learning footprints and PBL projects to help students learn effectively
 
 ---
 

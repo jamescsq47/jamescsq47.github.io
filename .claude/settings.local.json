@@ -5,7 +5,9 @@
       "Bash(git -C /workspace/jamescsq47.github.io log --oneline -5)",
       "Bash(git *)",
       "Bash(gh api *)",
-      "WebFetch(domain:jamescsq47.github.io)"
+      "WebFetch(domain:jamescsq47.github.io)",
+      "Bash(bundle install *)",
+      "WebFetch(domain:raw.githubusercontent.com)"
     ]
   }
 }

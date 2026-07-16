@@ -15,11 +15,14 @@ redirect_from:
       <p>Tsinghua University</p>
       <p><a href="mailto:chensq23@mails.tsinghua.edu.cn">chensq23@mails.tsinghua.edu.cn</a></p>
       <p class="profile-hero__links">
-        <a href="https://github.com/jamescsq47">GitHub</a>
-        <span>/</span>
-        <a href="/publications/">Publications</a>
-        <span>/</span>
-        <a href="/activities/">Activities</a>
+        <span class="profile-icon-link profile-icon-link--disabled" title="CV">
+          <i class="fas fa-file-lines" aria-hidden="true"></i>
+          <span class="sr-only">CV</span>
+        </span>
+        <a class="profile-icon-link" href="https://github.com/jamescsq47" title="GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          <span class="sr-only">GitHub</span>
+        </a>
       </p>
     </div>
   </section>
@@ -44,43 +47,8 @@ redirect_from:
   </section>
 
   <section>
-    <h2>Picture Options</h2>
-    <p class="muted">A few placeholders for recent academic, campus, and sports photos. These can be replaced with real images later.</p>
-    <div class="photo-grid">
-      <figure>
-        <div class="photo-placeholder">Research</div>
-        <figcaption>Research discussion / poster session placeholder</figcaption>
-      </figure>
-      <figure>
-        <div class="photo-placeholder">Campus</div>
-        <figcaption>Tsinghua campus life placeholder</figcaption>
-      </figure>
-      <figure>
-        <div class="photo-placeholder">Track</div>
-        <figcaption>Track and field competition placeholder</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section>
     <h2>Research Interests</h2>
-    <p>My current research focuses on building efficient, scalable, and useful AI systems. Topics include:</p>
-    <ul>
-      <li><strong>Efficient AI Systems:</strong> sparse attention, sequence parallelism, workload balancing, and system-level acceleration.</li>
-      <li><strong>Efficient Attention:</strong> sparse and quantized attention mechanisms for visual generation and long-context models.</li>
-      <li><strong>Brain Foundation Models:</strong> unified modeling of heterogeneous EEG and MEG signals for downstream neural decoding tasks.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>News</h2>
-    <ul>
-      <li><strong>[2026]</strong> db-SP accepted to MLSys 2026.</li>
-      <li><strong>[2025]</strong> BrainOmni accepted to NeurIPS 2025.</li>
-      <li><strong>[2025]</strong> PAROAttention accepted to NeurIPS 2025.</li>
-      <li><strong>[2024-2025]</strong> Received National Scholarship for Undergraduate Students.</li>
-      <li><strong>[2024]</strong> Received Dai Yusen Science &amp; Technology Innovation Scholarship.</li>
-    </ul>
+    <p>My current research focuses on efficient AI systems, sparse attention mechanisms, and brain foundation models.</p>
   </section>
 
   <section>
@@ -96,30 +64,6 @@ redirect_from:
         <strong>Tsinghua University High School</strong>. College Entrance Exam: 700/750.
       </li>
     </ul>
-  </section>
-
-  <section>
-    <h2>Publications</h2>
-    <ol class="compact-publications">
-      {% assign pubs = site.publications | reverse %}
-      {% for pub in pubs %}
-        <li>
-          <p class="publication-title">
-            {% if pub.paperurl %}
-              <a href="{{ pub.paperurl }}">{{ pub.title }}</a>
-            {% else %}
-              <a href="{{ base_path }}{{ pub.url }}">{{ pub.title }}</a>
-            {% endif %}
-          </p>
-          <p class="publication-meta">{{ pub.citation }}</p>
-          <p class="publication-links">
-            <span>{{ pub.venue }}</span>
-            {% if pub.paperurl %}<a href="{{ pub.paperurl }}">Paper</a>{% endif %}
-            <a href="{{ base_path }}{{ pub.url }}">Page</a>
-          </p>
-        </li>
-      {% endfor %}
-    </ol>
   </section>
 
   <section>
@@ -169,19 +113,4 @@ redirect_from:
     </ul>
   </section>
 
-  <section>
-    <h2>Language</h2>
-    <ul>
-      <li>TOEFL: 106/120 (Reading 30, Listening 29, Speaking 22, Writing 25).</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Miscs</h2>
-    <ul>
-      <li>I enjoy sports and will keep track and field competition photos in the Activities page.</li>
-      <li>Programming languages: C++, C, Python, CUDA, and LaTeX.</li>
-      <li>Tools: MATLAB and Typst.</li>
-    </ul>
-  </section>
 </div>

@@ -67,6 +67,30 @@ redirect_from:
   </section>
 
   <section>
+    <h2>Publications</h2>
+    <ol class="compact-publications">
+      {% assign pubs = site.publications | reverse %}
+      {% for pub in pubs %}
+        <li>
+          <p class="publication-title">
+            {% if pub.paperurl %}
+              <a href="{{ pub.paperurl }}">{{ pub.title }}</a>
+            {% else %}
+              <a href="{{ base_path }}{{ pub.url }}">{{ pub.title }}</a>
+            {% endif %}
+          </p>
+          <p class="publication-meta">{{ pub.citation }}</p>
+          <p class="publication-links">
+            <span>{{ pub.venue }}</span>
+            {% if pub.paperurl %}<a href="{{ pub.paperurl }}">Paper</a>{% endif %}
+            <a href="{{ base_path }}{{ pub.url }}">Page</a>
+          </p>
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section>
     <h2>Selected Projects</h2>
     <ol>
       <li>

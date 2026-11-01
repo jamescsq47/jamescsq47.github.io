@@ -19,3 +19,11 @@
 .travel-explorer{align-items:start}.map-panel{height:325px}#travel-map{min-height:0}.travel-photo{height:268px;min-height:0;flex:none}
 @media(max-width:1000px) and (min-width:741px){.map-panel{height:300px}.travel-photo{height:280px}}
 @media(max-width:740px){.map-panel{height:285px}.travel-photo{height:270px}}
+
+/* A photo wall follows the natural proportions of each photograph. */
+.sports-layout{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:28px;margin-top:23px;align-items:start}
+.sports-wall{columns:3;column-gap:10px}.sports-wall figure{margin:0 0 13px;break-inside:avoid}.sports-wall img{width:100%;height:auto;object-fit:initial}.sports-wall figcaption{font-size:11px;color:var(--muted);padding:5px 2px 0}.sports-wall .photo-open{background:transparent;border-radius:5px}.sports-results{border-left:1px solid var(--line);padding-left:20px;margin-top:8px}.sports-results h3{font:400 21px var(--serif);margin:0 0 17px}.sports-results .sport-honors{padding:0;border:0;margin:0;font-size:14px;line-height:1.65}.sports-results li{margin-bottom:17px}.sports-results b{display:block}.sports-layout .sport-tabs{gap:2px;margin-bottom:14px}.sports-layout .sport-tabs button{font-size:11px;padding:5px 7px}.map-guide{stroke-width:1.2;stroke-dasharray:3 5;stroke-linecap:round}
+@media(max-width:1000px){.sports-layout{grid-template-columns:minmax(0,1fr) 185px;gap:20px}.sports-wall{columns:2}.sports-results{padding-left:16px}.sports-results .sport-honors{font-size:13px}}
+@media(max-width:740px){.sports-layout{grid-template-columns:minmax(0,1fr);gap:22px}.sports-wall{columns:2;column-gap:10px}.sports-results{border-left:2px solid #d8c2e2;padding-left:16px;margin-top:0}.sports-results h3{font-size:20px;margin-bottom:12px}.sports-results .sport-honors{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px;font-size:13px}.sports-results li{margin-bottom:0}.sports-layout .sport-tabs button{font-size:12px}.experience-heading h2{font-size:23px}}
+
+.miscs-tabs{flex-wrap:wrap;gap:10px 24px}.miscs-tabs a{white-space:nowrap}

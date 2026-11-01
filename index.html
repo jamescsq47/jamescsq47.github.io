@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Siqi Chen · Tsinghua University</title>
 <meta name="description" content="Siqi Chen, Tsinghua University. Research in algorithm–system co-design, machine learning systems, and efficient deep learning.">
-<meta name="theme-color" content="#227365">
+<meta name="theme-color" content="#82318e">
 <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://jamescsq47.github.io/">
-<link rel="stylesheet" href="/assets/css/personal.css?v=20261101b">
+<link rel="stylesheet" href="/assets/css/personal.css?v=20261101c">
 <meta property="og:title" content="Siqi Chen · Tsinghua University">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://jamescsq47.github.io/images/bio-photo.jpg">
@@ -63,17 +63,13 @@
 </div>
 <div class="education-row">
 <div>
-<h3>Massachusetts Institute of Technology</h3>
-<p>Research Intern · HANLab</p>
-<p class="detail">Research assistance at HANLab</p>
+<h3>Massachusetts Institute of Technology <span class="edu-inline">· Research Intern, HANLab</span></h3>
 </div>
 <span class="date">July 2026 – Sep. 2026</span>
 </div>
 <div class="education-row">
 <div>
-<h3>Tsinghua University High School</h3>
-<p>High School Certificate</p>
-<p class="detail">College Entrance Exam: 700/750</p>
+<h3>Tsinghua University High School <span class="edu-inline">· College Entrance Exam: 700/750</span></h3>
 </div>
 <span class="date">Aug. 2017 – June 2023</span>
 </div>
@@ -83,11 +79,11 @@
 <p>My research focuses on algorithm–system co-design for efficient and scalable AI infrastructure. I explore this goal from three complementary directions:</p>
 <ul class="research-list">
 <li>
-<strong>Efficient inference algorithms</strong>Reducing computational and memory costs through training-free sparsification and quantization, with designs that translate algorithmic savings into practical speedups <a class="work-ref" href="#paroattention">(PAROAttention)</a>.</li>
+<strong>Efficient inference algorithms</strong>Reducing computational and memory costs through training-free sparsification and quantization, with designs that translate algorithmic savings into practical speedups.<div class="related"><em>Related past work:</em> <a href="#paroattention">PAROAttention</a>.</div></li>
 <li>
-<strong>Efficient inference systems</strong>Exploiting workload characteristics to improve resource utilization through load balancing, adaptive parallelism, and KV-cache scheduling, from visual generation to agentic LLM serving <span class="work-ref">(<a href="#db-sp">db-SP</a>, <a href="#dualpd">DualPD</a>)</span>.</li>
+<strong>Efficient inference systems</strong>Exploiting workload characteristics to improve resource utilization through load balancing, adaptive parallelism, and KV-cache scheduling, from visual generation to agentic LLM serving.<div class="related"><em>Related past work:</em> <a href="#db-sp">db-SP</a> and <a href="#dualpd">DualPD</a>.</div></li>
 <li>
-<strong>Efficient post-training algorithms</strong>Developing methods that encourage concise reasoning and effective collaboration between large and small models, reducing inference costs while maintaining or improving task performance <span class="work-ref">(<a href="#qlpo">QLPO</a>, <a href="#oars">OARS</a>)</span>.</li>
+<strong>Efficient post-training algorithms</strong>Developing methods that encourage concise reasoning and effective collaboration between large and small models, reducing inference costs while maintaining or improving task performance.<div class="related"><em>Related past work:</em> <a href="#qlpo">QLPO</a> and <a href="#oars">OARS</a>.</div></li>
 </ul>
 </section>
 <section class="section" id="publications">
@@ -96,33 +92,27 @@
 <span>2025 — 2026</span>
 </div>
 <article class="paper" id="dualpd">
-<div class="manuscript-art" aria-hidden="true">
-<b>DualPD</b>
-<span>Manuscript · 2026</span>
-</div>
+<div class="paper-visual"><a href="/images/research/dualpd.webp" target="_blank" rel="noopener" aria-label="View DualPD overview figure"><img src="/images/research/dualpd.webp" alt="DualPD system overview from the manuscript" width="1200" height="500"></a></div>
 <div>
-<span class="venue review">Under review · MLSys 2027</span>
+<span class="venue">Manuscript · 2026</span>
 <h3>DualPD: Bidirectional Dual-Path KV Transfer for Efficient Prefill–Decode Disaggregated Agentic LLM Serving</h3>
 <p class="authors">
 <strong>Siqi Chen</strong>, Shang Yang, Qinghao Hu, Junxian Guo, Song Han</p>
-<p class=paper-note>Manuscript under review.</p>
+
 </div>
 </article>
 <article class="paper" id="oars">
-<div class="manuscript-art" aria-hidden="true">
-<b>OARS</b>
-<span>Manuscript · 2026</span>
-</div>
+<div class="paper-visual"><a href="/images/research/oars.webp" target="_blank" rel="noopener" aria-label="View OARS overview figure"><img src="/images/research/oars.webp" alt="OARS system overview from the manuscript" width="1200" height="500"></a></div>
 <div>
-<span class="venue review">Under review · ICLR 2027</span>
+<span class="venue">Manuscript · 2026</span>
 <h3>OARS: On Post-Training for Cost-Efficient Heterogeneous Multi-Agent Systems</h3>
 <p class="authors">Shang Yang, Zhichen Zeng, Shi Dong, Yichuan Wang, <strong>Siqi Chen</strong>, Junxian Guo, Joseph E. Gonzalez, Banghua Zhu, Song Han</p>
-<p class=paper-note>Manuscript under review.</p>
+
 </div>
 </article>
 <article class="paper" id="qlpo">
 <div class="paper-visual">
-<img loading="eager" src="/images/research/qlpo.webp" alt="QLPO: Quadrant-weighted Sampling for Length-aware Policy Optimization — paper figure" width="340" height="210">
+<a href="/images/research/qlpo.webp" target="_blank" rel="noopener" aria-label="View full-size paper figure"><img loading="eager" src="/images/research/qlpo.webp" alt="QLPO: Quadrant-weighted Sampling for Length-aware Policy Optimization — paper figure" width="340" height="210"></a>
 </div>
 <div>
 <span class="venue ">COLM 2026</span>
@@ -138,7 +128,7 @@
 </article>
 <article class="paper" id="db-sp">
 <div class="paper-visual">
-<img loading="eager" src="/images/research/db-sp.webp" alt="db-SP: Accelerating Sparse Attention for Visual Generative Models with Dual-Balanced Sequence Parallelism — paper figure" width="340" height="210">
+<a href="/images/research/db-sp.webp" target="_blank" rel="noopener" aria-label="View full-size paper figure"><img loading="eager" src="/images/research/db-sp.webp" alt="db-SP: Accelerating Sparse Attention for Visual Generative Models with Dual-Balanced Sequence Parallelism — paper figure" width="340" height="210"></a>
 </div>
 <div>
 <span class="venue ">MLSys 2026</span>
@@ -156,7 +146,7 @@
 </article>
 <article class="paper" id="paroattention">
 <div class="paper-visual">
-<img loading="eager" src="/images/research/paroattention.webp" alt="PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and Quantized Attention in Visual Generation Models — paper figure" width="340" height="210">
+<a href="/images/research/paroattention.webp" target="_blank" rel="noopener" aria-label="View full-size paper figure"><img loading="eager" src="/images/research/paroattention.webp" alt="PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and Quantized Attention in Visual Generation Models — paper figure" width="340" height="210"></a>
 </div>
 <div>
 <span class="venue ">NeurIPS 2025</span>
@@ -172,7 +162,7 @@
 </article>
 <article class="paper" id="brainomni">
 <div class="paper-visual">
-<img loading="eager" src="/images/research/brainomni.webp" alt="BrainOmni: A Brain Foundation Model for Unified EEG and MEG Signals — paper figure" width="340" height="210">
+<a href="/images/research/brainomni.webp" target="_blank" rel="noopener" aria-label="View full-size paper figure"><img loading="eager" src="/images/research/brainomni.webp" alt="BrainOmni: A Brain Foundation Model for Unified EEG and MEG Signals — paper figure" width="340" height="210"></a>
 </div>
 <div>
 <span class="venue ">NeurIPS 2025</span>
@@ -219,8 +209,7 @@
 <div>Comprehensive Scholarship of Tsinghua University</div>
 </li>
 <li>
-<time>
-</time>
+<time>2024</time>
 <div>Tsinghua University Five-Star Volunteer<br>
 <small>Highest honor</small>
 </div>

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Siqi Chen · Tsinghua University</title>
+<meta name="description" content="Siqi Chen, Tsinghua University. Research in algorithm–system co-design, machine learning systems, and efficient deep learning.">
+<meta name="theme-color" content="#227365">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://jamescsq47.github.io/">
+<link rel="stylesheet" href="/assets/css/personal.css?v=20261101">
+<meta property="og:title" content="Siqi Chen · Tsinghua University">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://jamescsq47.github.io/images/bio-photo.jpg">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="shell">
+<aside class="profile">
+<a href="/" aria-label="Siqi Chen homepage">
+<img class="portrait" src="/images/bio-photo.jpg" width="176" height="176" alt="Siqi Chen">
+</a>
+<h1>Siqi Chen</h1>
+<p class="role">Undergraduate Student<br>
+<span class="affiliation">Tsinghua University</span>
+<br>Research Intern · MIT HANLab</p>
+<a class="contact" href="mailto:chensq23@mails.tsinghua.edu.cn">chensq23@mails.tsinghua.edu.cn</a>
+<div class="social">
+<a href="/files/Siqi_Chen_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+<a href="https://github.com/jamescsq47" target="_blank" rel="noopener">GitHub ↗</a>
+<a href="mailto:chensq23@mails.tsinghua.edu.cn">Email ↗</a>
+</div>
+<nav class="side-nav" aria-label="Main navigation">
+<a href="/#about">About Me</a>
+<a href="/#education">Education</a>
+<a href="/#research">Research Interests</a>
+<a href="/#publications">Publications</a>
+<a href="/#honors">Honors</a>
+<a class="secondary" href="/miscs/" >Miscs ↗</a>
+</nav>
+<p class="profile-note">Algorithms. Systems. Efficient AI.</p>
+</aside>
+<main id="main" class="content">
+<div class="topline">
+<span>Research & Academic Portfolio</span>
+<a href="/miscs/">Beyond research ↗</a>
+</div>
+<section class="section" id="about">
+<h2>About Me</h2>
+<p>Hi, I'm Siqi Chen, an undergraduate student in Electronic Engineering at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>. Currently, I am serving as a research intern at <a href="https://hanlab.mit.edu/">HANLab, Massachusetts Institute of Technology</a>, under the supervision of <a href="https://hanlab.mit.edu/songhan">Prof. Song Han</a>. Also I was extremely fortunate to be advised by <a href="https://nicsefc.ee.tsinghua.edu.cn/people/YuWang">Prof. Yu Wang</a> at <a href="https://nicsefc.ee.tsinghua.edu.cn/">NICS-EFC</a>.</p>
+<p>My research interests focus on algorithm-system co-design, machine learning systems, and efficient deep learning algorithms.</p>
+<div class="opportunity">I am currently <strong>seeking a PhD position starting in 2027 Fall</strong>, and am happy to discuss potential research fit and collaboration opportunities.</div>
+</section>
+<section class="section" id="education">
+<h2>Education</h2>
+<div class="education-row">
+<div>
+<h3>Tsinghua University</h3>
+<p>B.S. in Electronic Engineering · Undergraduate</p>
+<p class="detail">GPA: 3.9/4.0 &nbsp;·&nbsp; Rank: 10/261</p>
+</div>
+<span class="date">Aug. 2023 – Present</span>
+</div>
+<div class="education-row">
+<div>
+<h3>Massachusetts Institute of Technology</h3>
+<p>Research Intern · HANLab</p>
+<p class="detail">Research assistance at HANLab</p>
+</div>
+<span class="date">July 2026 – Sep. 2026</span>
+</div>
+<div class="education-row">
+<div>
+<h3>Tsinghua University High School</h3>
+<p>High School Certificate</p>
+<p class="detail">College Entrance Exam: 700/750</p>
+</div>
+<span class="date">Aug. 2017 – June 2023</span>
+</div>
+</section>
+<section class="section" id="research">
+<h2>Research Interests</h2>
+<p>My research focuses on algorithm–system co-design for efficient and scalable AI infrastructure. I explore this goal from three complementary directions:</p>
+<ul class="research-list">
+<li>
+<strong>Efficient inference algorithms</strong>Reducing computational and memory costs through training-free sparsification and quantization, with designs that translate algorithmic savings into practical speedups <a class="work-ref" href="#paroattention">(PAROAttention)</a>.</li>
+<li>
+<strong>Efficient inference systems</strong>Exploiting workload characteristics to improve resource utilization through load balancing, adaptive parallelism, and KV-cache scheduling, from visual generation to agentic LLM serving <span class="work-ref">(<a href="#db-sp">db-SP</a>, <a href="#dualpd">DualPD</a>)</span>.</li>
+<li>
+<strong>Efficient post-training algorithms</strong>Developing methods that encourage concise reasoning and effective collaboration between large and small models, reducing inference costs while maintaining or improving task performance <span class="work-ref">(<a href="#qlpo">QLPO</a>, <a href="#oars">OARS</a>)</span>.</li>
+</ul>
+</section>
+<section class="section" id="publications">
+<div class="section-heading">
+<h2>Publications & Preprints</h2>
+<span>2025 — 2026</span>
+</div>
+<article class="paper" id="dualpd">
+<div class="manuscript-art" aria-hidden="true">
+<b>DualPD</b>
+<span>Manuscript · 2026</span>
+</div>
+<div>
+<span class="venue review">Under review · MLSys 2027</span>
+<h3>DualPD: Bidirectional Dual-Path KV Transfer for Efficient Prefill–Decode Disaggregated Agentic LLM Serving</h3>
+<p class="authors">
+<strong>Siqi Chen</strong>, Shang Yang, Qinghao Hu, Junxian Guo, Song Han</p>
+<p class=paper-note>Manuscript under review.</p>
+</div>
+</article>
+<article class="paper" id="oars">
+<div class="manuscript-art" aria-hidden="true">
+<b>OARS</b>
+<span>Manuscript · 2026</span>
+</div>
+<div>
+<span class="venue review">Under review · ICLR 2027</span>
+<h3>OARS: On Post-Training for Cost-Efficient Heterogeneous Multi-Agent Systems</h3>
+<p class="authors">Shang Yang, Zhichen Zeng, Shi Dong, Yichuan Wang, <strong>Siqi Chen</strong>, Junxian Guo, Joseph E. Gonzalez, Banghua Zhu, Song Han</p>
+<p class=paper-note>Manuscript under review.</p>
+</div>
+</article>
+<article class="paper" id="qlpo">
+<div class="paper-visual">
+<img loading="eager" src="/images/research/qlpo.webp" alt="QLPO: Quadrant-weighted Sampling for Length-aware Policy Optimization — paper figure" width="340" height="210">
+</div>
+<div>
+<span class="venue ">COLM 2026</span>
+<h3>
+<a href="https://openreview.net/forum?id=WHc6ywhpSZ" target="_blank" rel="noopener">QLPO: Quadrant-weighted Sampling for Length-aware Policy Optimization</a>
+</h3>
+<p class="authors">Siwei Chen, <strong>Siqi Chen</strong>, Xupeng Miao, Bin Cui</p>
+<div class=paper-links>
+<a href="https://openreview.net/forum?id=WHc6ywhpSZ" target="_blank" rel="noopener">Paper ↗</a>
+<a href="https://arxiv.org/abs/2607.21793" target="_blank" rel="noopener">arXiv ↗</a>
+</div>
+</div>
+</article>
+<article class="paper" id="db-sp">
+<div class="paper-visual">
+<img loading="eager" src="/images/research/db-sp.webp" alt="db-SP: Accelerating Sparse Attention for Visual Generative Models with Dual-Balanced Sequence Parallelism — paper figure" width="340" height="210">
+</div>
+<div>
+<span class="venue ">MLSys 2026</span>
+<h3>
+<a href="https://mlsys.org/virtual/2026/oral/3798" target="_blank" rel="noopener">db-SP: Accelerating Sparse Attention for Visual Generative Models with Dual-Balanced Sequence Parallelism</a>
+</h3>
+<p class="authors">
+<strong>Siqi Chen</strong>, Ke Hong, Tianchen Zhao, Ruiqi Xie, Zhenhua Zhu, Xudong Zhang, Yu Wang</p>
+<div class=paper-links>
+<a href="https://arxiv.org/abs/2511.23113" target="_blank" rel="noopener">Paper ↗</a>
+<a href="https://github.com/thu-nics/db-SP" target="_blank" rel="noopener">Code ↗</a>
+<a href="https://mlsys.org/virtual/2026/oral/3798" target="_blank" rel="noopener">MLSys ↗</a>
+</div>
+</div>
+</article>
+<article class="paper" id="paroattention">
+<div class="paper-visual">
+<img loading="eager" src="/images/research/paroattention.webp" alt="PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and Quantized Attention in Visual Generation Models — paper figure" width="340" height="210">
+</div>
+<div>
+<span class="venue ">NeurIPS 2025</span>
+<h3>
+<a href="https://arxiv.org/abs/2506.16054" target="_blank" rel="noopener">PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and Quantized Attention in Visual Generation Models</a>
+</h3>
+<p class="authors">Tianchen Zhao, Ke Hong, Xinhao Yang, Xuefeng Xiao, Huixia Li, Feng Ling, Ruiqi Xie, <strong>Siqi Chen</strong>, Hongyu Zhu, Yichong Zhang, Yu Wang</p>
+<div class=paper-links>
+<a href="https://arxiv.org/abs/2506.16054" target="_blank" rel="noopener">Paper ↗</a>
+<a href="https://neurips.cc/virtual/2025/poster/117769" target="_blank" rel="noopener">NeurIPS ↗</a>
+</div>
+</div>
+</article>
+<article class="paper" id="brainomni">
+<div class="paper-visual">
+<img loading="eager" src="/images/research/brainomni.webp" alt="BrainOmni: A Brain Foundation Model for Unified EEG and MEG Signals — paper figure" width="340" height="210">
+</div>
+<div>
+<span class="venue ">NeurIPS 2025</span>
+<h3>
+<a href="https://arxiv.org/abs/2505.18185" target="_blank" rel="noopener">BrainOmni: A Brain Foundation Model for Unified EEG and MEG Signals</a>
+</h3>
+<p class="authors">Qinfan Xiao, Ziyun Cui, Chi Zhang, <strong>Siqi Chen</strong>, Wen Wu, Andrew Thwaites, Alexandra Woolgar, Bowen Zhou, Chao Zhang</p>
+<div class=paper-links>
+<a href="https://arxiv.org/abs/2505.18185" target="_blank" rel="noopener">Paper ↗</a>
+<a href="https://neurips.cc/virtual/2025/poster/117066" target="_blank" rel="noopener">NeurIPS ↗</a>
+</div>
+</div>
+</article>
+</section>
+<section class="section" id="honors">
+<h2>Honors & Awards</h2>
+<ul class="honors">
+<li>
+<time>2026</time>
+<div>SenseTime Scholarship<br>
+<small>Top 30 undergraduate AI researchers in China</small>
+</div>
+</li>
+<li>
+<time>2024, 2025</time>
+<div>National Scholarship for Undergraduate Students<br>
+<small>Highest honor for Chinese undergraduates</small>
+</div>
+</li>
+<li>
+<time>2025, 2026</time>
+<div>Tsinghua Alumni – Dai Yusen Science and Technology Innovation Scholarship</div>
+</li>
+<li>
+<time>2024</time>
+<div>Tsinghua Alumni – Zhihua Integrated Circuit Scholarship</div>
+</li>
+<li>
+<time>2024</time>
+<div>First Prize, The 40th National College Student Physics Competition</div>
+</li>
+<li>
+<time>2024–2026</time>
+<div>Comprehensive Scholarship of Tsinghua University</div>
+</li>
+<li>
+<time>
+</time>
+<div>Tsinghua University Five-Star Volunteer<br>
+<small>Highest honor</small>
+</div>
+</li>
+<li>
+<time>2020, 2023</time>
+<div>Outstanding Student of Beijing</div>
+</li>
+</ul>
+</section>
+<footer>
+<span>© 2026 Siqi Chen</span>
+<a class="back-top" href="#top">Back to top ↑</a>
+</footer>
+</main>
+</div>
+</body>
+</html>

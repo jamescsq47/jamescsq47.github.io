@@ -11,26 +11,18 @@
   }
   $('photo-close').onclick = () => dialog.close();
   dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
-  let sport = -1;
-  const sportTabs = document.querySelector('.sport-tabs');
-  ['All sports', ...data.sports.map(item => item.title)].forEach((title, i) => {
-    const button = document.createElement('button'); button.textContent = title;
-    button.onclick = () => { sport = i - 1; showSport(); }; sportTabs.append(button);
+  const allPhotos = data.sports.flatMap(group => group.photos);
+  const byName = name => allPhotos.find(photo => photo.full.endsWith('/' + name + '.webp'));
+  const collage = ['track-3', 'track-1', 'track-2', 'frisbee-1', 'basketball-1', 'jump-rope-1', 'sports-team', 'sports-relay'];
+  collage.forEach((name, i) => {
+    const photo = byName(name);
+    const figure = document.createElement('figure'), button = document.createElement('button'), image = document.createElement('img');
+    figure.className = 'collage-photo collage-' + (i + 1);
+    button.className = 'photo-open'; button.setAttribute('aria-label', `Enlarge: ${photo.caption}`);
+    image.src = photo.src; image.alt = photo.caption; image.loading = i < 3 ? 'eager' : 'lazy'; image.decoding = 'async';
+    button.append(image); button.onclick = () => enlarge(photo.full, photo.caption);
+    figure.append(button); $('sports-wall').append(figure);
   });
-  function showSport() {
-    [...sportTabs.children].forEach((b, i) => b.setAttribute('aria-pressed', String(i === sport + 1)));
-    const photos = sport < 0 ? data.sports.flatMap(group => group.photos) : data.sports[sport].photos;
-    $('sports-wall').replaceChildren();
-    photos.forEach((photo, i) => {
-      const figure = document.createElement('figure'), button = document.createElement('button'), image = document.createElement('img');
-      button.className = 'photo-open'; button.setAttribute('aria-label', `Enlarge: ${photo.caption}`);
-      image.src = photo.src; image.alt = photo.caption; image.loading = i < 3 ? 'eager' : 'lazy'; image.decoding = 'async';
-      button.append(image); button.onclick = () => enlarge(photo.full || photo.src, photo.caption);
-      const caption = document.createElement('figcaption'); caption.textContent = photo.caption;
-      figure.append(button, caption); $('sports-wall').append(figure);
-    });
-  }
-  showSport();
   const ns = 'http://www.w3.org/2000/svg', pins = $('map-pins'), map = $('travel-map');
   const regions = { world: [0, 0, 800, 365], asia: [555, 75, 155, 155], america: [95, 70, 175, 145] };
   let destination = data.travel.findIndex(p => p.title === 'Boston'), region = 'world';
@@ -55,7 +47,7 @@
     const view = regions[region]; map.setAttribute('viewBox', view.join(' '));
     document.querySelectorAll('[data-region]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.region === region)));
     const scale = Math.min(map.clientWidth / view[2], map.clientHeight / view[3]);
-    const radius = 5.7 / Math.max(scale, .1);
+    const radius = 3.8 / Math.max(scale, .1);
     [...pins.children].forEach((pin, i) => {
       pin.setAttribute('aria-pressed', String(i === destination));
       pin.querySelector('.pin-hit').setAttribute('r', radius * 2.4);

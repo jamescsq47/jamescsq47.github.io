@@ -1,0 +1,1 @@
+Optimized copies of owner-provided photographs. Originals remain in the local miscs/sports, miscs/travel and miscs/experience folders. Map coastlines are public-domain Natural Earth 1:110m land geometry.

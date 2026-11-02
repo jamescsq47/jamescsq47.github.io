@@ -2,6 +2,20 @@
   'use strict';
   const data = JSON.parse(document.getElementById('miscs-data').textContent);
   const $ = id => document.getElementById(id);
+  const previewObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const image = entry.target;
+      image.src = image.dataset.src;
+      previewObserver.unobserve(image);
+    });
+  }, {rootMargin: '160px'});
+  function showPreview(image, src) {
+    image.dataset.src = src;
+    previewObserver.unobserve(image);
+    previewObserver.observe(image);
+  }
+  document.querySelectorAll('img[data-src]').forEach(image => previewObserver.observe(image));
   const dialog = $('photo-dialog');
   function enlarge(src, caption) {
     $('dialog-photo').src = src;
@@ -19,7 +33,7 @@
     const figure = document.createElement('figure'), button = document.createElement('button'), image = document.createElement('img');
     figure.className = 'collage-photo collage-' + (i + 1);
     button.className = 'photo-open'; button.setAttribute('aria-label', `Enlarge: ${photo.caption}`);
-    image.src = photo.src; image.alt = photo.caption; image.loading = i < 3 ? 'eager' : 'lazy'; image.decoding = 'async';
+    showPreview(image, photo.src); image.alt = photo.caption; image.decoding = 'async';
     button.append(image); button.onclick = () => enlarge(photo.full, photo.caption);
     figure.append(button); $('sports-wall').append(figure);
   });
@@ -65,7 +79,7 @@
     const item = data.travel[destination];
     const [x,y] = xy(item), view = regions[region];
     if (x < view[0] || x > view[0]+view[2] || y < view[1] || y > view[1]+view[3]) region = 'world';
-    $('travel-photo').src = item.src; $('travel-photo').alt = item.title;
+    showPreview($('travel-photo'), item.src); $('travel-photo').alt = item.title;
     $('travel-title').textContent = item.title;
     [...$('destination-list').children].forEach((b, j) => b.setAttribute('aria-pressed', String(j === destination)));
     showMap();
